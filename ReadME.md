@@ -49,6 +49,7 @@ git switch <branch-name>                    # Modern alternative to checkout
 git branch -M <new-name>                    # Rename current branch
 git branch -d <branch-name>                 # Delete branch (safe)
 git branch -D <branch-name>                 # Force delete branch
+git branch -vv                              # Show branches with tracking info
 ```
 
 ## 🔄 Changes & Reversions
