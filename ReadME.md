@@ -120,10 +120,14 @@ git rebase --abort                          # Cancel rebase operation
 
 ### 📦 Stashing
 ```bash
-git stash                                   # Temporarily save changes
-git stash list                              # List all stashes
-git stash pop                               # Apply and remove most recent stash
-git stash apply                             # Apply stash without removing
+git stash                                   # Save current uncommitted changes
+git stash push -m "message"                 # Stash with a descriptive label
+git stash list                              # View all stashed work
+git stash show                              # Preview what's inside a stash
+git stash apply                             # Reapply a stash (keeps it in the list)
+git stash pop                               # Reapply and remove the stash
+git stash drop                              # Delete a specific stash
+git stash clear                             # Remove all stashes
 ```
 
 ### 🏷️ Tags
